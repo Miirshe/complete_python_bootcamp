@@ -71,32 +71,73 @@
 #     calculate and display the average score as well as the corresponding grade based on the
 #     following grading scale:
 
-def grade_calculator():
+# def grade_calculator():
+#
+#     try:
+#         total = 0.0
+#         subjects = int(input('how many subjects to calculate ? : '))
+#         i = 1
+#         while i <= subjects:
+#             marks = float(input(f'Enter a subject mark {i} ? :'))
+#             total += marks
+#             i += 1
+#         average = total/subjects
+#         if average >= 90 :
+#             print(f'Your Grade : A \nYour Average : {average}')
+#         elif average >= 80 :
+#             print(f'Your Grade : B \nYour Average : {average}')
+#         elif average >= 70 :
+#             print(f'Your Grade : C \nYour Average : {average}')
+#         elif average >= 60 :
+#             print(f'Your Grade : D \nYour Average : {average}')
+#         elif average < 60 :
+#             print(f'Your Grade : F \nYour Average : {average}')
+#     except Exception as exec:
+#         print(exec)
+#     finally:
+#         print('feel free!')
+#
+#
+# grade_calculator()
 
-    try:
-        total = 0.0
-        subjects = int(input('how many subjects to calculate ? : '))
-        i = 1
-        while i <= subjects:
-            marks = float(input(f'Enter a subject mark {i} ? :'))
-            total += marks
-            i += 1
-        average = total/subjects
-        if average >= 90 :
-            print(f'Your Grade : A \nYour Average : {average}')
-        elif average >= 80 :
-            print(f'Your Grade : B \nYour Average : {average}')
-        elif average >= 70 :
-            print(f'Your Grade : C \nYour Average : {average}')
-        elif average >= 60 :
-            print(f'Your Grade : D \nYour Average : {average}')
-        elif average < 60 :
-            print(f'Your Grade : F \nYour Average : {average}')
-    except Exception as exec:
-        print(exec)
-    finally:
-        print('feel free!')
+
+# THE PRACTICAL SESSION: Develop the following applications in Python using PyCharm,
+# correct any sytax error, and share the results with your teacher.
+# (1)	Ali, a Tutuk driver, would like to manage his income. Create a Python application that asks Ali
+# for the total income and daily expenses, subtracts the expenses from the income, displays the net income,
+# # and finally prints "Thank you for using this application."
+# def manage_income():
+#     total_income = float(input('Enter the total income ? : '))
+#     daily_expenses = float(input('Enter daily expense ? : '))
+#     income = total_income - daily_expenses
+#     print(f'Net Income : {income}\nThank you for using this application.')
+#
+#
+# manage_income()
 
 
-grade_calculator()
+# (2)	A company pays its employees based on their work hours with an hourly rate of 0.5 dollars per hour.
+# Create a Python program that asks the user for the number of hours worked by the employee,
+# multiplies worked hours by 0.5, and displays the amount every employee should receive.
+# def calculate_hours_work():
+#     user_hours = float(input('Enter work hours ? : '))
+#     rate = 0.5
+#     amount = user_hours*rate
+#     print(f'You amount : ${amount} \nenjoy feel free')
+#
+#
+# calculate_hours_work()
+
+# (3)	Your Python teacher asks you to help him calculate the total marks for the class.
+# Develop a Python program that asks the user for the subject marks and the assignment marks,
+# then calculates the student's total marks and congratulates them for the achievement.
+def calculate_subject_marks():
+    subject_marks = float(input('Enter a subject marks ? : '))
+    assignment_marks = float(input('Enter assignment marks : ? '))
+    total_marks = subject_marks + assignment_marks
+    print(f'The total marks : {total_marks}')
+
+
+calculate_subject_marks()
+
 
