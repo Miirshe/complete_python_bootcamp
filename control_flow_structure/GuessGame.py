@@ -3,6 +3,7 @@
 # Prompt the user to guess the number and provide feedback
 # if the guess is too high or too low. Repeat the process until
 # the user guesses the correct number.
+import math
 import random
 
 
@@ -30,4 +31,24 @@ def gussingGame(number):
 
 
 gussingGame(40)
+
+
+def sum_range_numbers():
+    sum = 0
+    for num in range(1, 100):
+        sum += num
+    print(f'\nthe total num : {sum}')
+
+
+sum_range_numbers()
+
+
+def square_number(num):
+
+    print(f'The Number {num} : {math.floor(math.sqrt(num))}')
+
+
+square_number(5)
+
+
 
